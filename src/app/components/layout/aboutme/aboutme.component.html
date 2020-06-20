@@ -1,0 +1,27 @@
+<div id="aboutme" class="container-fluid one">
+
+
+<div class="heading">
+    <h3 class="headerText">About Me</h3>
+</div>
+<div class="aboutmetextbox">
+    <h2 class="aboutmetext">
+        I first started working with software when I was
+        14 years old. In the past 4 years I've had projects
+        reaching from a Photo Booth to an POS-Machine
+        leading me into Web-Development. I am very
+        passionate about technology and can't wait to 
+        extend my knowledge every single day.
+    </h2>
+</div>
+<h3 class="expHeading">Experience</h3>
+<div class="container graph">
+    <canvas baseChart
+    [datasets] = "barChartData"
+    [labels] = "barChartLabels"
+    [options] = "barChartOptions"
+    [legend] = "barChartLegend"
+    [chartType] = "barChartType"></canvas>
+</div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,59 @@
+<div id="home" class="backgroundOverlay">
+    <div class="background">
+    <header>
+    <nav class="main-nav">
+        <div class="main-nav__heading">
+            <div class="main-nav__logo">
+                <a href="/" target="_blank" rel="nofollow" class="main-nav__logo-link"><img class="logo" src="assets/img/dl-logo.png"></a>
+            </div>
+            <button class="navbar-toggler d-lg-none" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarsExampleDefault" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        </div>
+        <ul class="main-nav__menu">
+            <li class="main-nav__menu-item">
+                
+                <a class="main-nav__menu-item-link" href="#home">Home</a>
+            </li>
+            <li class="main-nav__menu-item">
+                <a class="main-nav__menu-item-link" href="#aboutme">About Me</a>
+            </li>
+            
+            <li class="main-nav__menu-item">
+                <a class="main-nav__menu-item-link" href="#projects">Projects</a>
+            </li>
+            
+            <li class="main-nav__menu-item">
+               <a class="main-nav__menu-item-link" href="#textInput">Contact</a>
+            </li>
+        </ul>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="firstNavLink" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarsExampleDefault" aria-label="Toggle navigation" class="nav-link navbar-toggler" href="#aboutme">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#textInput">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <a href="">
+        <span></span>
+    </a>
+    </header>
+
+      <div class="textBox">
+        <h1 class="headerTitle">Dominik Link</h1>
+        <h3 class="headerSubTitle">I'm an Austria based Full-Stack Web Developer.</h3>
+    </div>
+    <div class="arrow">
+        <a href="#aboutme"><i class="fas fa-chevron-down"></i></a>
+    </div>
+
+  </div>
+</div>
